@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Helping Hand</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Resource Router</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="map-section">
+            <h2>Find Help Near You</h2>
+            <div class="location-inputs">
+                <button id="search-btn">Search Here</button>
+            </div>
+            <iframe src="https://my.atlist.com/map/8064bc73-8b77-418f-a8dd-a2f1ef9e0021/?share=true"
+                    allow="geolocation 'self' https://my.atlist.com" 
+                    width="100%" height="400px" 
+                    loading="lazy" frameborder="0" scrolling="no" 
+                    allowfullscreen id="atlist-embed"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 A Helping Hand. All rights reserved.</p>
+    </footer>
+ 
+
+  <h2>Chat with our AI</h2>
+  <p>Feel free to ask any questions to our AI chatbot.</p>
+  <textarea id="input" placeholder="Type here..."></textarea>
+  <br>
+  <i>Press enter to submit...</i> <hr></hr>
+   <div id="conversation">
+  </div>
+  <br></br>
+
+  <script src="https://wizard-orpheus.hackclub.dev/wizard_orpheus.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
